@@ -5,8 +5,6 @@ import edu.uoc.ds.adt.sequential.Stack;
 import edu.uoc.ds.adt.sequential.StackArrayImpl;
 
 public class PR0Stack {
-
-    // Capacitat màxima de la seqüència.
     public final int CAPACITY = 9;
 
     private Stack<Character> stack;
@@ -20,12 +18,6 @@ public class PR0Stack {
     }
 
 
-    public void fillStack() {
-        for (char c = '0'; c < '9'; c++) {
-            stack.push(Character.valueOf(c));
-        }
-    }
-
     public String clearAllStack() {
         StringBuilder sb = new StringBuilder();
         while (!stack.isEmpty())
@@ -35,5 +27,9 @@ public class PR0Stack {
 
     public Stack<Character> getStack() {
         return this.stack;
+    }
+
+    public void push(Character c) {
+        this.stack.push(c);
     }
 }

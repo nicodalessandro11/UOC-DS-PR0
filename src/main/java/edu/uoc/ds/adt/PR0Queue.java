@@ -17,12 +17,6 @@ public class PR0Queue {
         queue = new QueueArrayImpl<>(CAPACITY);
     }
 
-    public void fillQueue() {
-        for (char c = '0'; c < '9'; c++) {
-            queue.add(Character.valueOf(c));
-        }
-    }
-
 
     public String clearFullQueue() {
         StringBuilder sb = new StringBuilder();
@@ -37,4 +31,7 @@ public class PR0Queue {
         return this.queue;
     }
 
+    public void add(Character c) {
+        this.queue.add(c);
+    }
 }
