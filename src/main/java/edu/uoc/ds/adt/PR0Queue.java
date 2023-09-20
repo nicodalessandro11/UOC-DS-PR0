@@ -6,7 +6,7 @@ import edu.uoc.ds.adt.sequential.QueueArrayImpl;
 
 public class PR0Queue {
 
-    public final int CAPACITY = 9;
+    public final int CAPACITY = 10;
 
     private Queue<Character> queue;
 

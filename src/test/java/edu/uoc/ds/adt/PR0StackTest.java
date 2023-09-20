@@ -34,7 +34,7 @@ public class PR0StackTest {
     @org.junit.Test
     public void stackTest() {
 
-        assertEquals(this.pr0q.CAPACITY, this.pr0q.getStack().size());
+        assertEquals(this.pr0q.CAPACITY-1, this.pr0q.getStack().size());
 
         assertEquals(this.pr0q.clearAllStack(), new String("8 7 6 5 4 3 2 1 0 "));
 

@@ -33,7 +33,7 @@ public class PR0QueueTest {
 
     @org.junit.Test
     public void queueTest() {
-        assertEquals(this.pr0q.CAPACITY, this.pr0q.getQueue().size());
+        assertEquals(this.pr0q.CAPACITY-1, this.pr0q.getQueue().size());
 
         assertEquals(this.pr0q.clearFullQueue(), new String("0 1 2 3 4 5 6 7 8 "));
 
